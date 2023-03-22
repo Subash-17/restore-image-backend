@@ -64,6 +64,11 @@ async function finalRes(finalUrl, config, res){
 
 const port = 3000;
 
+app.get('/get/vercel',(req,res)=>{
+  console.log("Vercel worked")
+  res.status(200).json("Its is worked")
+})
+
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
